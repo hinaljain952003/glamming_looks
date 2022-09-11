@@ -1,4 +1,14 @@
-
+<?php
+$con = mysqli_connect('localhost','root','','Glamming_Looks');
+if(isset($_POST['submit'])){
+   $name = $_POST['Name'];
+   $email = $_POST['Email'];
+   $pno = $_POST['pno'];
+   $msg = $_POST['Message'];
+   $sql = "INSERT INTO enquiry VALUES ('$name','$email','$pno','$msg')";
+  mysqli_query($con, $sql);
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -9,7 +19,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>labspa</title>
+      <title>Glamming Looks</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -59,8 +69,14 @@
                               <li class="nav-item">
                                  <a class="nav-link" href="#service">Service</a>
                               </li>
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="#tutorial"> Tutorial </a>
+                              </li>
                               <li class="nav-item">
                                  <a class="nav-link" href="#customer">Customer</a>
+                              </li>
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="packages.html"> Package  </a>
                               </li>
                               <li class="nav-item">
                                  <a class="nav-link" href="#contact">Contact Us</a>
@@ -135,7 +151,7 @@
                            </div>
                            <div class="col-md-6">
                               <div class="text_img">
-                                 <figure><img src="images/girl.png" alt="#"/></figure>
+                                 <figure><img src="images/girl1.png" alt="#"/></figure>
                               </div>
                            </div>
                         </div>
@@ -150,13 +166,13 @@
                               <div class="text-bg">
                                  <span>Welcome to</span>
                                  <h1>Glamming Looks</h1>
-                                 <p>HHHHHHHHHHHHHH </p>
+                                 <p>Best in efficient MAKEUP ARTIST</p>
                                  <a href="#">Read More </a> <a href="#">Book Now</a>
                               </div>
                            </div>
                            <div class="col-md-6">
                               <div class="text_img">
-                                 <figure><img src="images/girl.png" alt="#"/></figure>
+                                 <figure><img src="images/girl1.png" alt="#"/></figure>
                               </div>
                            </div>
                         </div>
@@ -212,14 +228,33 @@
          </div>
       </div>
       <!-- service -->
-      <!-- about -->
+      <!--tutorial-->
+      <div id="tutorial"  class="tutorial">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-8">
+                <div class="titlepage">
+                <h2> <img src="images/head.png" alt="#"/>Tutorial</h2>
+              <centre>  <iframe width="300" height="300" src="https://www.youtube.com/embed/UK0nvmtPe4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></centre>
+             <centre> <iframe width="300" height="300" src="https://www.youtube.com/embed/MkLkhe1JgTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div></div></div></centre>
+            </div>
+               </div>
+            </div>
+             <!-- end tutorial-->
+             <!-- about -->
       <div id="about"  class="about">
          <div class="container">
             <div class="row">
                <div class="col-md-9">
                   <div class="titlepage">
                      <h2> <img src="images/head.h.png" alt="#"/> About Our Glamming Looks</h2>
-                     <p>We Glamming looks offer ptofessional hair,nails & beauty services also specialize in wedding makeup. From experienced stylish to celebrity artist and junior artist, we have a team of feature trained artist who are verified with complete background checks to makle your experience great .</p>
+                     <p>We Glamming looks offer ptofessional hair,nails & beauty services also specialize in wedding makeup. 
+                        From experienced stylish to celebrity artist and junior artist, we have a team of feature 
+                        trained artist who are verified with complete background checks to makle your experience great .</p>
+                     <h2>ARTIST</h2> 
+                     <p>Art is something that had attracted me when I was very young. Always surrounded by brushes, canvases and colors, I figured out that I have an innate sense for visualization of beauty. And soon enough, I realized my true calling and passion when my friends and family started asking me to do their makeup for weddings.I began my journey of artistry by opting out of a MBA college when my teacher picked on me for wearing makeup; and luckily enough, there has been no looking back since then.
+As an artist, I am a part of weddings and brides from all over the world. I understand the importance of a wedding for any bride-to be; which is why, I personally attend to all my bride’s wedding needs as a makeup & hair artist and stylist.
+Today, when I see brides trusting and choosing ‘Amrit Kaur’ for their special day, I get this overwhelming feeling which is very magical in nature.</p>  
                      <a class="read_more">Read More</a>
                   </div>
                </div>
@@ -249,9 +284,9 @@
                         <div class="carousel-caption ">
                            <div class="test_box">
                               <i><img src="images/tes.png" alt="#"/></i>
-                              <h4>Rohali jonson</h4>
+                              <h4>Pratiksha Mahajan</h4>
                               <span>customer</span>
-                              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined </p>
+                              <p>They made me look extra beautiful on my special day. I really felt special</p>
                               <img src="images/icon.png" alt="#"/>
                            </div>
                         </div>
@@ -261,10 +296,10 @@
                      <div class="container">
                         <div class="carousel-caption">
                            <div class="test_box">
-                              <i><img src="images/tes.png" alt="#"/></i>
-                              <h4>Rohali jonson</h4>
+                              <i><img src="images/tes1.png" alt="#"/></i>
+                              <h4>Bipasha banikya</h4>
                               <span>customer</span>
-                              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined </p>
+                              <p> Made my eyes blue smoky effect with a radiant base, which toook my heart </p>
                               <img src="images/icon.png" alt="#"/>
                            </div>
                         </div>
@@ -274,10 +309,10 @@
                      <div class="container">
                         <div class="carousel-caption">
                            <div class="test_box">
-                              <i><img src="images/tes.png" alt="#"/></i>
+                              <i><img src="images/tes2.png" alt="#"/></i>
                               <h4>Rohali jonson</h4>
                               <span>customer</span>
-                              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined </p>
+                              <p>Happy to be dolled up by Glamming Looks </p>
                               <img src="images/icon.png" alt="#"/>
                            </div>
                         </div>
@@ -295,6 +330,7 @@
       </div>
       <!-- end customer -->
       </div>
+      
       <!--  contact -->
       <div id="contact" class="contact">
          <div class="container">
@@ -307,7 +343,7 @@
             </div>
             <div class="row">
                <div class="col-md-6">
-                  <form id="request" class="main_form">
+                  <form id="request" class="main_form" action="final1.php" method="post">
                      <div class="row">
                         <div class="col-md-12 ">
                            <input class="contactus" placeholder="Name" type="type" name="Name"> 
@@ -316,13 +352,13 @@
                            <input class="contactus" placeholder="Email" type="type" name="Email"> 
                         </div>
                         <div class="col-md-12">
-                           <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">                          
+                           <input class="contactus" placeholder="Phone Number" type="type" name="pno">                          
                         </div>
                         <div class="col-md-12">
-                           <textarea class="textarea" placeholder="Message" type="type" Message="Name">Message </textarea>
+                           <textarea class="textarea" placeholder="Message" type="type" name="Message">Message </textarea>
                         </div>
                         <div class="col-sm-col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                           <button class="send_btn">Send</button>
+                           <button class="send_btn" name="submit">Send</button>
                         </div>
                      </div>
                   </form>
@@ -355,19 +391,18 @@
                         <div class="col-md-7 padd_bottom">
                            <div class="heading3">
                               <a href="#"><img src="images/logo1.png" alt="#"/></a>
-                              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>
+                              <p>GLAMMING LOOKS provides the best of service you are looking for</p>
                            </div>
                         </div>
                         <div class="col-md-5 padd_bottom padd_bott">
                            <div class="heading3">
                               <h3>Contact Us</h3>
-                              <ul class="infometion">
-                                 <li><a href="#">Donec odio. Quisque </a></li>
-                                 <li><a href="#">volutpat mattis</a></li>
-                                 <li><a href="#">eros.Lorem ipsum dolor</a></li>
-                                 <li><a href="#">sit amet, consectetuer  </a></li>
-                                 <li><a href="#">adipiscing elit. Donec  </a></li>
-                                 <li><a href="#">odio. Quisque volutpat </a></li>
+                              <ul class="infomrtion">
+                                 <li><a href="#">8369238724</a></li>
+                                 <li><a href="#">Hinal jain</a></li>
+                                 <li><a href="#">9833839169</a></li>
+                                 <li><a href="#">Sejal Gotam  </a></li>
+                                 <li><a href="#">Glamming looks</a></li>
                               </ul>
                            </div>
                         </div>
@@ -379,12 +414,12 @@
                            <div class="heading3">
                               <h3>INFORMATION</h3>
                               <ul class="infometion">
-                                 <li><a href="#">Donec odio. Quisque </a></li>
-                                 <li><a href="#">volutpat mattis</a></li>
-                                 <li><a href="#">eros.Lorem ipsum dolor</a></li>
-                                 <li><a href="#">sit amet, consectetuer  </a></li>
-                                 <li><a href="#">adipiscing elit. Donec  </a></li>
-                                 <li><a href="#">odio. Quisque volutpat </a></li>
+                                 <li><a href="#">Makeup artist </a></li>
+                                 <li><a href="#">Nail artist</a></li>
+                                 <li><a href="#">Hair artist</a></li>
+                                 <li><a href="#"> makeover  </a></li>
+                                 <li><a href="#">BEST MAKEUP SERVICE PROVIDER </a></li>
+                                 <li><a href="#"> HAPP TO SERVE </a></li>
                               </ul>
                            </div>
                         </div>
@@ -392,12 +427,12 @@
                            <div class="heading3">
                               <h3>MY ACCOUNT</h3>
                               <ul class="infometion">
-                                 <li><a href="#">Donec odio. Quisque </a></li>
-                                 <li><a href="#">volutpat mattis</a></li>
-                                 <li><a href="#">eros.Lorem ipsum dolor</a></li>
-                                 <li><a href="#">sit amet, consectetuer  </a></li>
-                                 <li><a href="#">adipiscing elit. Donec  </a></li>
-                                 <li><a href="#">odio. Quisque volutpat </a></li>
+                                 <li><a href="#">@glamminglooks</a></li>
+                                 <li><a href="#">#glamminglooks</a></li>
+                                 <li><a href="#">&glamminglooks</a></li>
+                                 <li><a href="#">*glamminglooks  </a></li>
+                                 <li><a href="#">!glamminglooks </a></li>
+                                 <li><a href="#">$glamminglooks </a></li>
                               </ul>
                            </div>
                         </div>
@@ -409,7 +444,7 @@
                <div class="container">
                   <div class="row">
                      <div class="col-md-12">
-                        <p>© 2019 All Rights Reserved. <a href="https://html.design/"> Free  html Templates</a></p>
+                        <p>© 2019 All Rights Reserved. <a href="https://html.design/"> Glamming Looks</a></p>
                      </div>
                   </div>
                </div>

@@ -150,7 +150,7 @@
                               <div class="text-bg">
                                  <span>Welcome to</span>
                                  <h1>Glamming Looks</h1>
-                                 <p>HHHHHHHHHHHHHH </p>
+                                 <p>Best in efficient MAKEUP ARTIST</p>
                                  <a href="#">Read More </a> <a href="#">Book Now</a>
                               </div>
                            </div>
@@ -249,9 +249,9 @@
                         <div class="carousel-caption ">
                            <div class="test_box">
                               <i><img src="images/tes.png" alt="#"/></i>
-                              <h4>Rohali jonson</h4>
+                              <h4>Pratiksha Mahajan</h4>
                               <span>customer</span>
-                              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined </p>
+                              <p>They made me look extra beautiful on my special day. I really felt special</p>
                               <img src="images/icon.png" alt="#"/>
                            </div>
                         </div>
@@ -261,10 +261,10 @@
                      <div class="container">
                         <div class="carousel-caption">
                            <div class="test_box">
-                              <i><img src="images/tes.png" alt="#"/></i>
-                              <h4>Rohali jonson</h4>
+                              <i><img src="images/tes1.png" alt="#"/></i>
+                              <h4>Bipasha banikya</h4>
                               <span>customer</span>
-                              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined </p>
+                              <p> Made my eyes blue smoky effect with a radiant base, which toook my heart </p>
                               <img src="images/icon.png" alt="#"/>
                            </div>
                         </div>
@@ -274,10 +274,10 @@
                      <div class="container">
                         <div class="carousel-caption">
                            <div class="test_box">
-                              <i><img src="images/tes.png" alt="#"/></i>
+                              <i><img src="images/tes2.png" alt="#"/></i>
                               <h4>Rohali jonson</h4>
                               <span>customer</span>
-                              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined </p>
+                              <p>Happy to be dolled up by Glamming Looks </p>
                               <img src="images/icon.png" alt="#"/>
                            </div>
                         </div>
@@ -355,19 +355,17 @@
                         <div class="col-md-7 padd_bottom">
                            <div class="heading3">
                               <a href="#"><img src="images/logo1.png" alt="#"/></a>
-                              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>
+                              <p>GLAMMING LOOKS provides the best of service you are looking for</p>
                            </div>
                         </div>
                         <div class="col-md-5 padd_bottom padd_bott">
                            <div class="heading3">
                               <h3>Contact Us</h3>
-                              <ul class="infometion">
-                                 <li><a href="#">Donec odio. Quisque </a></li>
-                                 <li><a href="#">volutpat mattis</a></li>
-                                 <li><a href="#">eros.Lorem ipsum dolor</a></li>
-                                 <li><a href="#">sit amet, consectetuer  </a></li>
-                                 <li><a href="#">adipiscing elit. Donec  </a></li>
-                                 <li><a href="#">odio. Quisque volutpat </a></li>
+                              <ul class="infomrtion">
+      
+                                 <li><a href="#">Hinal Jain</a></li>
+                                 <li><a href="#">Sejal Gotam  </a></li>
+                                 <li><a href="#">Glamming looks</a></li>
                               </ul>
                            </div>
                         </div>
